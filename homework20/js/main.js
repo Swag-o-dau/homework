@@ -115,7 +115,7 @@
 
     const swiper = new Swiper('.gallery__slider', {
 
-        spaceBetween: 15,
+        spaceBetween: 8,
         slidesPerView: 1.5,
 
         pagination: {
@@ -130,6 +130,7 @@
 
         breakpoints: {
             451: {
+                spaceBetween: 15,
                 slidesPerView: 2,
             },
             601: {
@@ -144,5 +145,6 @@
         }
 
     });
+
 
 })()
