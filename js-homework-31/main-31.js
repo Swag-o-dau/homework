@@ -19,9 +19,9 @@ console.log(calculateFinalPrice(100, 10, 0));
 
 function checkAccess(userName, password) {
     if (userName == "admin" && password == 123456) {
-        alert("Доступ разрешен");
+        console.log("Доступ разрешен");
     } else {
-        alert("Доступ запрещен");
+        console.log("Доступ запрещен");
     }
 }
 
