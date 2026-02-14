@@ -77,8 +77,6 @@
 
 /* ========================================= */
 
-.main__opinion {}
-
 .opinion {
     background: var(--bg-2);
     height: 825px;
@@ -93,7 +91,7 @@
 
 .opinion__inner {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 150px;
     left: 280px;
 }
@@ -478,8 +476,6 @@
     color: var(--accent-color);
 }
 
-.reviews__rating {}
-
 .reviews__top {
     display: flex;
     gap: 70px;
@@ -523,16 +519,10 @@
     margin: 40px 0 40px;
 }
 
-.reviews__list {}
-
 .reviews__item {
     display: flex;
     gap: 70px;
 }
-
-.reviews__left {}
-
-.reviews__right {}
 
 .reviews__name {
     font-weight: 500;
@@ -544,8 +534,6 @@
 .reviews__item-stars {
     min-width: 142px;
 }
-
-.reviews__item-star {}
 
 .reviews__right-top {
     display: flex;
@@ -575,8 +563,6 @@
     max-width: 770px;
     margin-bottom: 30px;
 }
-
-.reviews__reviews-list {}
 
 .reviews__reviews-item:nth-child(n + 4) {
     display: none;
@@ -637,10 +623,6 @@
     background: #ababab;
 }
 
-.faq__accordion {}
-
-.faq__accordion-list {}
-
 .faq__accordion-list-control {
     display: flex;
     justify-content: space-between;
@@ -653,8 +635,6 @@
     font-size: 20px;
     line-height: 150%;
 }
-
-.faq__accordion-list-control-icon {}
 
 .horizontal-line {
     background: var(--general-color);
@@ -740,8 +720,6 @@
     margin-bottom: 30px;
 }
 
-.news_content {}
-
 .news__date {
     font-weight: 300;
     font-size: 18px;
@@ -778,10 +756,6 @@
     display: flex;
     gap: 135px;
 }
-
-.contact {}
-
-.contact__content {}
 
 .contact__title {
     font-family: var(--second-family);
@@ -831,8 +805,6 @@
 .contact__button:hover {
     background: var(--accent-color);
 }
-
-.subscription {}
 
 .subscription__content {
     max-width: 555px;
@@ -1020,8 +992,6 @@
     }
 
     /* --------------- */
-
-    .product__item {}
 
     .products__list {
         gap: 10px 20px;
@@ -1249,8 +1219,6 @@
         margin-bottom: 20px;
     }
 
-    .reviews__rating {}
-
     .reviews__top {
         display: flex;
         gap: 102px;
@@ -1293,16 +1261,10 @@
         margin: 20px 0 20px;
     }
 
-    .reviews__list {}
-
     .reviews__item {
         display: flex;
         gap: 22px;
     }
-
-    .reviews__left {}
-
-    .reviews__right {}
 
     .reviews__name {
         font-size: 14px;
@@ -1456,8 +1418,6 @@
         max-width: 196px;
     }
 
-    .news_content {}
-
     .news__date {
         font-size: 12px;
         margin-bottom: 10px;
@@ -1483,10 +1443,6 @@
     .connect__content {
         gap: 20px;
     }
-
-    .contact {}
-
-    .contact__content {}
 
     .contact__title {
         font-size: 20px;
@@ -1740,8 +1696,6 @@
     }
 
     /* --------------- */
-
-    .product__item {}
 
     .products__list {
         gap: 10px 10px;

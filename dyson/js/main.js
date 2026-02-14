@@ -21,7 +21,6 @@
     // Показать еще Sales
 
     const showMoreSales = document.querySelector('.show-more__link--sales')
-    const hintsSalesLenght = document.querySelectorAll('.sales__hints-item').length
     let salesItems = 4
 
     showMoreSales.addEventListener('click', (e) => {
@@ -56,22 +55,20 @@
 
     // фильтр товаров
 
-    // Обработчик изменения фильтра
     document.getElementById('filter-select').addEventListener('change', function () {
         const filterType = this.value;
         const salesList = document.querySelector('.sales__list');
         const items = Array.from(document.querySelectorAll('.sales__item'));
 
-        // Сортируем товары в зависимости от выбранного фильтра
         switch (filterType) {
             case 'popular':
                 sortByPopularity(items);
                 break;
             case 'cheap':
-                sortByPrice(items, 'asc');
+                sortByPrice(items, 'cheap');
                 break;
             case 'fancy':
-                sortByPrice(items, 'desc');
+                sortByPrice(items, 'fancy');
                 break;
             case 'new':
                 sortByNew(items);
@@ -81,20 +78,19 @@
                 break;
         }
 
-        // Очищаем список и добавляем отсортированные товары
         salesList.innerHTML = '';
         items.forEach(item => {
             salesList.appendChild(item);
         });
     });
 
-    // Функции сортировки:
+    // Функции сортировки
 
     function sortByPopularity(items) {
         items.sort((a, b) => {
             const popularityA = parseInt(a.dataset.popularity);
             const popularityB = parseInt(b.dataset.popularity);
-            return popularityB - popularityA; // Высокая популярность сначала
+            return popularityB - popularityA;
         });
     }
 
@@ -102,7 +98,7 @@
         items.sort((a, b) => {
             const priceA = parseInt(a.dataset.price);
             const priceB = parseInt(b.dataset.price);
-            return order === 'asc' ? priceA - priceB : priceB - priceA;
+            return order === 'cheap' ? priceA - priceB : priceB - priceA;
         });
     }
 
@@ -121,7 +117,7 @@
         items.sort((a, b) => {
             const ratingA = parseFloat(a.dataset.rating);
             const ratingB = parseFloat(b.dataset.rating);
-            return ratingB - ratingA; // Высокий рейтинг сначала
+            return ratingB - ratingA;
         });
     }
 
@@ -226,4 +222,19 @@
             showMoreNews.style.display = 'none'
         }
     })
+
+    // Тень хедера при прокрутке страницы
+
+    const header = document.querySelector('.header__top');
+    const shadow = 'shadow--vis';
+
+    function toggleHeaderShadow() {
+        if (window.scrollY > 0) {
+            header.classList.add(shadow);
+        } else {
+            header.classList.remove(shadow);
+        };
+    }
+
+    window.addEventListener('scroll', toggleHeaderShadow);
 })()
