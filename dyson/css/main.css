@@ -959,6 +959,7 @@
     .hero {
         min-height: 389px;
         justify-content: start;
+        padding-top: 73;
     }
 
     .hero__img {
@@ -1527,6 +1528,7 @@
     .footer__logo {
         margin-bottom: 10px;
     }
+
     .footer__logo img {
         max-width: 73px;
     }
@@ -1575,6 +1577,7 @@
         height: 21px;
         padding: 6.26px 5.59px 5.31px 4.04px;
     }
+
     .logos__tg svg {
         max-width: 11.37px;
         max-height: 9.43px;
@@ -1586,6 +1589,7 @@
         height: 21px;
         padding: 6.93px 4.69px 6.63px 4.4px;
     }
+
     .logos__vk svg {
         max-width: 11.92px;
         max-height: 7.44px;
@@ -1597,6 +1601,7 @@
         height: 21px;
         padding: 6.78px 4.54px 6.78px 4.54px;
     }
+
     .logos__yt svg {
         max-width: 10.88px;
         max-height: 7.62px;
@@ -1658,6 +1663,7 @@
     .hero {
         min-height: 392px;
         position: relative;
+        padding-top: 52px;
     }
 
     .hero__img {
@@ -1673,7 +1679,7 @@
 
     .hero__container {
         position: absolute;
-        top: 108px;
+        top: 160px;
         left: 97px;
     }
 
@@ -2190,13 +2196,16 @@
     .footer__logo {
         margin-bottom: 6px;
     }
+
     .footer__logo img {
         max-width: 110px;
     }
+
     .footer__content {
         flex-wrap: wrap;
         row-gap: 16px;
     }
+
     .footer__about,
     .shop__title,
     .info__title,
@@ -2236,6 +2245,7 @@
         height: 18px;
         padding: 5.37px 4.79px 4.55px 3.46px;
     }
+
     .logos__tg svg {
         max-width: 9.75px;
         max-height: 8.08px;
@@ -2246,6 +2256,7 @@
         height: 18px;
         padding: 5.94px 3.02px 5.68px 4.77px;
     }
+
     .logos__vk svg {
         max-width: 10.21px;
         max-height: 6.37px;
@@ -2256,6 +2267,7 @@
         height: 18px;
         padding: 6.69px 4.36px 5.78px 5.31px;
     }
+
     .logos__yt svg {
         max-width: 9.33px;
         max-height: 6.53px;

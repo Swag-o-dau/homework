@@ -1,4 +1,4 @@
-(function () {
+(function() {
 
     // Бургер меню
 
@@ -34,7 +34,7 @@
 
     // изменение количества товара
 
-    document.addEventListener('click', function (e) {
+    document.addEventListener('click', function(e) {
         const plusBtn = e.target.closest('.sales__item-plus');
         const minusBtn = e.target.closest('.sales__item-minus');
 
@@ -55,7 +55,7 @@
 
     // фильтр товаров
 
-    document.getElementById('filter-select').addEventListener('change', function () {
+    document.getElementById('filter-select').addEventListener('change', function() {
         const filterType = this.value;
         const salesList = document.querySelector('.sales__list');
         const items = Array.from(document.querySelectorAll('.sales__item'));
@@ -171,7 +171,7 @@
         }
     })
 
-        // Аккордион
+    // Аккордион
 
     const accordionLists = document.querySelectorAll('.faq__accordion-list');
 
@@ -226,7 +226,7 @@
     // Тень хедера при прокрутке страницы
 
     const header = document.querySelector('.header__top');
-    const shadow = 'shadow--vis';
+    const shadow = 'shadow';
 
     function toggleHeaderShadow() {
         if (window.scrollY > 0) {

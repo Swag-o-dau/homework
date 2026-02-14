@@ -84,9 +84,5 @@ html {
 }
 
 .shadow {
-    box-shadow: 0 0 0 0 #0000000d, 0 0 0 0 #0000000d;
-    transition: var(--transition);
-}
-.shadow.shadow--vis {
     box-shadow: 0 5px 10px 0 #0000000d, 0 5px 10px 0 #0000000d;
 }
