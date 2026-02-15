@@ -9,13 +9,13 @@
         const burgerNavLink = e.target.closest('.nav__link')
         if (!burgerIcon && !burgerNavLink) return
 
-        if (document.documentElement.clientWidth > 770) return
+        if (document.documentElement.clientWidth > 900) return
 
         if (!document.body.classList.contains('body--opened-menu')) {
             document.body.classList.add('body--opened-menu')
         } else {
             document.body.classList.remove('body--opened-menu')
-        }
+        }        
     }
 
     // Показать еще Sales
@@ -53,7 +53,7 @@
         }
     });
 
-    // фильтр товаров
+    //фильтр товаров
 
     document.getElementById('filter-select').addEventListener('change', function() {
         const filterType = this.value;
@@ -237,4 +237,26 @@
     }
 
     window.addEventListener('scroll', toggleHeaderShadow);
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: loop,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
 })()
